@@ -1,6 +1,15 @@
+:root {
+    --primary-color: #FEFF0D;
+    --secondary-color: #FFCC00;
+    --tertiary-color: #E8A60C;
+    --quaternary-color: #FF9E0D;
+    --light-color: #f2f2f2;
+    --medium-color: #585858;
+    --dark-color: #080808;
+}
 .bg-custom {
-    background: rgb(62,0,94);
-    background: linear-gradient(90deg, rgba(62,0,94,1) 0%, rgba(118,15,171,1) 27%, rgba(210,83,255,1) 56%, rgba(118,15,171,1) 81%, rgba(62,0,94,1) 100%);
+    background: var(--primary-color);
+    background: linear-gradient(90deg, var(--quaternary-color) 0%, var(--tertiary-color) 27%, var(--primary-color) 56%, var(--secondary-color) 81%, var(--quaternary-color) 100%);
 }
 
 .navbar-brand,
