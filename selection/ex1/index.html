@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection</title>
+</head>
+
+<body>
+    <button onclick="aumentarF()">Aumentar Fonte</button>
+    <button onclick="reduzirF()">Reduzir Fonte</button>
+    <br><br>
+    <button onclick="dizerOla()">Dizer Olá</button>
+    <br><br>
+    <button onclick="aplicarEstilo()">Aplicar Estilo</button>
+    <br><br>
+    <button onclick="corBlue()">Aplicar Cor: Azul</button>
+    <button onclick="corRed()">Aplicar Cor: Vermelho</button>
+    <button onclick="corPurple()">Aplicar Cor: Roxo</button>
+    <br><br>
+    <button onclick="marginAumentar()">Aumentar Margem</button>
+    <button onclick="marginDiminuir()">Diminuir Margem</button>
+
+    <h1>Hello </h1>
+
+
+    <script>
+        let titulo = document.querySelector('h1')
+        let font_size = 32;
+        let margin_size = 0;
+
+        function marginDiminuir() {
+            margin_size--;
+            aplicarMargin();
+        }
+
+        function marginAumentar() {
+            margin_size++;
+            aplicarMargin();
+        }
+
+        function aplicarMargin() {
+            titulo.style.margin = margin_size + 'px'
+        }
+
+        function corBlue() {
+            titulo.style.color = 'blue';
+        }
+
+        function corRed() {
+            titulo.style.color = 'red';
+        }
+
+        function corPurple() {
+            titulo.style.color = 'purple';
+        }
+
+        function aumentarF() {
+            font_size++;
+            aplicarSize();
+        };
+
+        function reduzirF() {
+            font_size--;
+            aplicarSize();
+        };
+
+        function aplicarSize() {
+            titulo.style.fontSize = font_size + 'px';
+        };
+
+        function dizerOla() {
+            alert('Olá')
+        };
+
+        function aplicarEstilo() {
+            titulo.style.backgroundColor = 'blue';
+            titulo.style.fontSize = '64px';
+            titulo.style.marginTop = '100px'
+        };
+    </script>
+</body>
+
+</html>
